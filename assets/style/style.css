@@ -40,7 +40,7 @@ a:hover {
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
-a:nth-of-type(12) {
+a:nth-of-type(1) {
   position: relative;
   background: var(--highlight-secondary);
   color: var(--secondary);
@@ -79,3 +79,384 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+
+.colorChange {
+  animation-name: colorChange;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorChange {
+  20% {
+    background: #0070bb;
+  }
+  40% {
+    background: #ff4000;
+  }
+  60% {
+    background: #00ff11;
+  }
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+
+.rotation {
+  animation-name: rotation;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+.backflip {
+  animation-name: backflip;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes backflip {
+  0% {
+    transform: scale(1, 1) translateY(5rem) rotate(-10deg);
+  }
+  25% {
+    transform: scale(2, 2) translateY(5rem) rotate(10deg);
+  }
+  50% {
+    transform: scale(2, 2) translateY(5rem) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+
+
+
+
+
+
+.groei {
+  animation-name: groei;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes groei {
+  0% {
+      transform: scale(1.0);
+  }
+  50% {
+      transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rotation2 {
+  animation-name: rotation2;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotation2 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 95%;
+    transform: rotateY(180deg);
+  }
+  100% {
+    left: 0;
+    transform: rotateY(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+.upsidedown {
+  animation-name: upsidedown;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes upsidedown {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+.rotationwheel {
+  animation-name: rotationwheel;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotationwheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(40deg);
+  }
+  30% {
+    transform: rotate(60deg);
+  }
+  40% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  60% {
+    transform: rotate(140deg);
+  }
+  70% {
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: rotate(240deg);
+  }
+  90% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+.fadeout {
+  animation-name: fadeout;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeout {
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+
+
+
+.bye {
+  animation-name: bye;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bye {
+	
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: rotate(100deg) translateX(-20em) scale(.8);
+  }
+
+  50% {
+    transform: rotate(-50deg) translateX(50em);
+  }
+
+  80% {
+    transform: translateY(50em);
+  }
+
+  90% {
+    transform: translateY(-1em) scale(.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+.everything {
+  animation-name: everything;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes everything {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  20% {
+    background: #0070bb;
+  }
+  40% {
+    background: #ff4000;
+  }
+  60% {
+    background: #00ff11;
+  }
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
+  0% {
+    transform: scale(1, 1) translateY(5rem) rotate(-10deg);
+  }
+  25% {
+    transform: scale(2, 2) translateY(5rem) rotate(10deg);
+  }
+  50% {
+    transform: scale(2, 2) translateY(5rem) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  0% {
+      transform: scale(1.0);
+  }
+  50% {
+      transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
+}
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+
+}
